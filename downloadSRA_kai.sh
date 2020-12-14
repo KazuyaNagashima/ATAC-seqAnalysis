@@ -26,9 +26,12 @@ do
     if [ $? = 0 ] ; then
       echo 'SRAがあります。'
     else
+      echo 'SRAをダウンロードします。'
+      cd sra
       prefetch ${line} --max-size 100GB
       mv ./${line}/${line}.sra .
       rm -r ${line}
+      cd ..
     fi
  
 done
