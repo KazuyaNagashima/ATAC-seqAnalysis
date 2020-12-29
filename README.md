@@ -1,1 +1,1 @@
-# NGSanalysis
+# ATAC-seq analysis
